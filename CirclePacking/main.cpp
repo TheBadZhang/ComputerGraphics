@@ -7,8 +7,8 @@
 #include <fstream>
 #include <conio.h>
 
-#define Pic
-#define Bin
+// #define Pic
+// #define Bin
 struct Circle{
 	int x, y, r;
 };
@@ -20,7 +20,7 @@ int main () {
 	// 最小半径
 	const int radius = 50;
 	// 最大半径
-	const int WW = 1920, WH = 1080, times = 10000;
+	const int WW = 800, WH = 600, times = 3000;
 	// 宽度，高度，圈数
 	std::vector <Circle> CircleList;
 	int count = 0;
@@ -71,20 +71,6 @@ int main () {
 		circle (x, y, r);
 		fillellipse (x, y, r, r);
 		// 画出图形
-		if (keystate (VK_SPACE)) {
-			// 按空格保存
-			std::fstream PIC;
-			char *size;
-			PIC.open("1.ppm", std::ios::out|std::ios::binary);
-			PIC << "P6 1920 1080 255" << "\n";
-			for (int a = 0; a < WH; a++) {
-				for (int b = 0; b < WW; b++) {
-					color_t temp = getpixel_f(b, a);
-					PIC << (char)EGEGET_R(temp) << (char)EGEGET_G(temp) << (char)EGEGET_B(temp);
-				}
-			}
-			break;
-		}
 		CircleList.push_back ({x,y,r});
 		count += 1;
 		// 计数值加一
