@@ -65,6 +65,8 @@ int main () {
 		// ege::floodfillsurface (x, y, EGERGB (0, 0, 0));
 		// 内部填充，以线条颜色为依据
 		drawPloy (x, y, n, r, R);
+		// ege::imagefilter_blurring(NULL, 0x60, 0xff);
+		// 去掉 cleardevice 运行这句
 	}
 
 	ege::getch ();
