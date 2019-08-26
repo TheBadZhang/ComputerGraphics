@@ -88,7 +88,8 @@ int main () {
 		setcolor (map [x][y]);
 		setfillcolor (map [x][y]);
 #endif
-		circle (x, y, r);
+		// circle (x, y, r);
+		// 手动选择实心还是空心
 		fillellipse (x, y, r, r);
 		// 画出图形
 		CircleList.push_back ({x,y,r});
