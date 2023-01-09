@@ -82,8 +82,10 @@ void dataUpdate (void) {
 	t += t_div;
 }
 
+
 void drawBox(int x, int y, double r) {
-	bar (x-r, y-r, x+r, y+r);
+	// bar (x-r, y-r, x+r, y+r);
+	fillellipsef(x, y, r, r);
 }
 void drawInterface (void) {
 	int i = 0;
