@@ -6,9 +6,12 @@
 PIMAGE pic;
 std::vector<PIMAGE> pattern;
 std::vector<std::string> pattern_list = {
-	"./pattern/res.png",
-	"./pattern/res2.png",
-	"./pattern/res3.png"
+	// "./pattern/res.png",
+	// "./pattern/res2.png",
+	// "./pattern/res3.png",
+	"./pattern/res1-1.png",
+	"./pattern/res1-2.png",
+	"./pattern/res1-3.png"
 };
 
 int main (int argc, char *argv []) {
